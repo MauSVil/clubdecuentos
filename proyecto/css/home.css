@@ -1,0 +1,266 @@
+.header{
+  background: #4C3F87;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.header a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.header nav{
+  position: relative;
+  margin:0;
+  margin-right: 10px;
+}
+
+.logo-case{
+  margin:0;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+body{
+  margin: 0px;
+}
+
+.F-section{
+  background: white;
+  height: 83.2vh;
+  width: 100vw;
+}
+
+.Back-Im{
+  background: white;
+  width: 100vw;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Im-Case{
+  margin:0;
+  width: 300px;
+  background: white;
+}
+
+.Im{
+  width: 300px;
+  opacity: 1;
+}
+
+.Cuentos{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin-top: 2vh;
+}
+
+.Cuento1,
+.Cuento2,
+.Cuento3,
+.Cuento4{
+  width: 200px;
+  height: 200px;
+}
+
+.Cuento-case{
+  margin:0;
+  width: inherit;
+  height: inherit;
+}
+
+.Cuento-img{
+  margin:0;
+  width: inherit;
+  height: inherit;
+  z-index: -1;
+}
+
+#Cuento1:hover{
+  z-index: 20;
+  height: 300px;
+  width: 300px;
+  transition-duration: 0.5s;
+}
+
+#Cuento2:hover{
+  z-index: 3;
+  height: 201px;
+  transition-duration: 0.5s;
+}
+#Cuento3:hover{
+  z-index: 3;
+  height: 201px;
+  transition-duration: 0.5s;
+}
+#Cuento4:hover{
+  z-index: 3;
+  height: 201px;
+  transition-duration: 0.5s;
+}
+
+.Home-Titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background: white;
+}
+
+.Home-Titulo h1{
+  margin: 30px;
+  margin-bottom: 20px;
+}
+
+.Inscripcion{
+  width: 100%;
+  height: 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Inscripcion button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.Inscripcion button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Que-es{
+  background: white;
+  width: 50vw;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 16px 64px;
+  overflow: visible;
+}
+
+.Que-es div h2,
+.Conocenos div h2{
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+
+.Que-es div p,
+.Conocenos div p{
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Open Sans';
+  letter-spacing: 0.02rem;
+  line-height: 1.7;
+  padding:0 200px;
+}
+
+
+.Conocenos{
+  background: white;
+  width: 50vw;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 64px;
+  overflow: visible;
+}
+
+.Primer-p{
+  margin-top: 50px;
+}
+
+
+.Im-Cont{
+  position: fixed;
+  bottom: 7vh;
+  right: 2vw;
+  width: 60px;
+  height: 60px;
+}
+
+
+
+footer{
+  position: fixed;
+  background: #F9F9F9;
+  display: flex;
+  margin-left:0;
+  height: 50px;
+  width: 100vw;
+  align-items: center;
+  justify-content:space-around;
+  bottom: 0px;
+}
+
+footer p{
+  margin:0;
+}
+
+.footer-kitma a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-redes{
+  display: flex;
+}
+
+.footer-redes{
+  height: 20px;
+  width: 20px;
+}
+
+
+.Redes-Container{
+  height: 20px;
+  width: 20px;
+  margin:0;
+  margin-left:10px;
+
+}
+
+.Redes-facebook{
+  width: 20px;
+}
+
+.Redes-twitter{
+  width: 20px;
+}
+
+.Redes-instagram{
+    width: 20px;
+}
