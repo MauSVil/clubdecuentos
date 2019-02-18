@@ -1,4 +1,6 @@
-@media screen and (min-width: 1024px) {
+*{
+  background: transparent;
+}
 
 .header{
   background: #4C3F87;
@@ -33,6 +35,7 @@
 
 body{
   margin: 0px;
+  background-image: url("../images/texture1.png");
 }
 
 .foto-contacto{
@@ -58,7 +61,6 @@ body{
   display: block;
   margin-top: 20px;
   margin-left: 80px;
-  background:white; /* NOTE: background */
   width: 40vw;
   height: 538px;
 }
@@ -119,7 +121,6 @@ body{
 }
 
 .Info{
-  background: white; /* NOTE: background */
   display: inline;
   width: 40vw;
   height: 538px;
@@ -131,20 +132,17 @@ body{
   margin-top: 20px;
   width: 100%;
   height: 30px;
-  background: white; /* NOTE: background */
   display: flex;
 }
 
 .Info-dir{
   width: 100%;
   height: 80px;
-  background: white; /* NOTE: background */
 }
 
 .Info-empresa{
   width: 100%;
   height: 30px;
-  background: white; /* NOTE: background */
 }
 
 .form p{
@@ -232,5 +230,151 @@ footer p{
 
 .Redes-instagram-d{
   margin-left: 20px;
+}
+
+
+@media (max-width:767px) and (min-width:320px) {
+
+.header{
+  display: none;
+}
+
+.Contact{
+  display: inline;
+}
+
+.form h2{
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
+}
+
+.foto-contacto{
+  display: none;
+}
+
+.form{  display: inherit;
+}
+
+.Form-1,
+.Form-2,
+.Form-3,
+.Form-4{
+  margin-left: 5vw;
+  width: 85vw;
+}
+
+.Contact-button{
+  margin-left: 70%;
+}
+
+.Info{
+  display: none;
+}
+
+footer{
+  display: inline-grid;
+}
+
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  padding:0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+a {
+  text-decoration:none;
+}
+
+
+.nav {
+  position:absolute;
+  width:150px;
+  height:100vh;
+  top:0;
+  left:-220px;
+  padding-top:47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-right:4px solid rgba(114, 126, 3, 1); /*Color del borde del nav*/
+  transition:all .5s ease;
+}
+.nav__item {
+   display:block;
+   width:96%;
+   margin:0 auto;
+   line-height:2;
+   position:relative;
+   border-bottom:.5px solid rgba(59, 62, 61, 1);
+   border-top:.5px solid rgba(59, 62, 61, 1);
+   background-color:transparent;
+   font-family: 'Open Sans', sans-serif;
+   text-align:center;
+   color:rgba(221, 231, 228, 1);
+}
+
+.current:before {
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  border-top:17px solid transparent;
+  border-left:15px solid #1D2120;
+  border-bottom:17px solid transparent;
+  top:0px;
+  right:-15px;
+  z-index:4;
+}
+
+.current:after {
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  border-top:16.5px solid transparent;
+  border-left:17px solid rgba(114, 126, 3, 1);  /*Color del borde del triangulo*/
+  border-bottom:17px solid transparent;
+  top:.5px;
+  right:-21px;
+  z-index:1;
+}
+
+.menu-toogle {
+  position:fixed;
+  width: 35px;
+  line-height:1.1;
+  text-align:center;
+  top:6.5px;
+  left: 8px;
+  border-radius:3px;
+  background-color: transparent;
+  transition: all .5s ease;
+  z-index:10;
+  }
+
+.menu-toogle::before {
+  content:"☰";
+  font-size:32px;
+  color:black;
+}
+
+.checkbox {
+  display:none;
+}
+
+.checkbox:checked ~ .nav {
+  left:0px;
+  position:fixed;
+}
+
+.checkbox:checked ~ .main-w {
+  margin-left:200px;
+}
+
+.checkbox:checked ~ .menu-toogle {
+  left:170px;
+  position:fixed;
 }
 }
