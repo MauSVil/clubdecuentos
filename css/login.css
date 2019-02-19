@@ -44,6 +44,7 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   background-repeat: no-repeat;
   background-position: 0 -80%;
   background-attachment: fixed;
+  background-size: auto;
 }
 
 .foto-contacto p{
@@ -299,25 +300,16 @@ footer p{
   margin-left:10px;
 
 }
-
 .Redes-facebook{
   width: 20px;
 }
-
-.Redes-twitter{
-  width: 20px;
-}
-
 .Redes-instagram{
     width: 20px;
 }
-
 .footer-redes{
   height: 20px;
   width: 20px;
 }
-
-
 .Redes-Container-d{
   height: 20px;
   width: 20px;
@@ -328,46 +320,33 @@ footer p{
 
 .Redes-facebook-d,
 .Redes-instagram-d,
-.Redes-twitter-d{
+{
   width: 20px;
 }
-
-.Redes-twitter-d{
-  margin-left: 10px;
-}
-
 .Redes-instagram-d{
   margin-left: 20px;
 }
 @media (max-width:680px) {
-  .login-page{
-    margin-top: 3%;
+  .foto-contacto{
+    background-position: center top;
+
   }
   .form {
     z-index: 1;
     background: #FFFFFF;
     max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
+    margin: 0 auto  100px;
+    padding: 25px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
   .login-page#login-form:before {
-    content: 'ó';
-    color: #79b42b;
-    position: absolute;
-    top: 15%;
-    right: 0;
-    left: 1%;
-    bottom: 0;
-    margin: auto;
-    height: 0.5em;
-    width: 0.5em;
-    left: 1.5em;
-    z-index: 900;
+    display: none;
   }
+  .login-page#login-form:after {
+    display: none;}
   .left{
-    margin-left: 0;
+    margin-left: 2%;
 
   }
 }
