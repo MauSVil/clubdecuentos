@@ -339,10 +339,7 @@ footer p{
 .Redes-instagram-d{
   margin-left: 20px;
 }
-@media screen and (max-width 680px) {
-body{
-  background: red;
-}
+@media (max-width:680px) {
   .login-page{
     margin-top: 3%;
   }
