@@ -108,8 +108,8 @@ body{
 
 .Im-Case{
   margin:0;
-  width: 230px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
 }
 
 .Im{
@@ -130,8 +130,8 @@ body{
 .Cuento2,
 .Cuento3,
 .Cuento4{
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   margin-right: 15px;
 }
 
@@ -194,7 +194,7 @@ body{
   margin-bottom: 30px;
   padding: 16px 64px;
   overflow: visible;
-  margin-top: 5vh;
+  margin-top: 20vh;
 }
 
 .Que-es div h2,
@@ -216,7 +216,7 @@ body{
 
 .Conocenos{
   width: 50vw;
-  height: 70vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
   display: block;
@@ -243,7 +243,6 @@ body{
 }
 
 footer{
-  position: fixed;
   background: #F9F9F9;
   display: flex;
   margin-left:0;
@@ -251,7 +250,7 @@ footer{
   width: 100vw;
   align-items: center;
   justify-content: space-around;
-  bottom: 0px;
+  position: absolute;
 }
 
 footer p{
@@ -384,6 +383,7 @@ footer p{
 }
 
 
+
 @media (max-width:767px) and (min-width:320px) {
 
 
@@ -486,12 +486,12 @@ body{
 .Que-es{
   margin-top: 0;
   width: 80vw;
-  height: 70vh;
+  height: 50vh;
 }
 
 .Conocenos{
   width: 80vw;
-  height: 70vh;
+  height: 150vh;
   margin-top: 10em;
 }
 
