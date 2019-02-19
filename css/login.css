@@ -40,7 +40,7 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   background: #0000ff24;
   width: 100%;
   height: 250px;
-  background-image: url("https://www.simco-ion.es/uploads/pics/BannerLogIn.jpg");
+  background-image: url(https://www.simco-ion.es/uploads/pics/BannerLogIn.jpg);
   background-repeat: no-repeat;
   background-position: 0 -80%;
   background-attachment: fixed;
@@ -74,7 +74,6 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   height: 0.5em;
   width: 0.5em;
   left: 1.5em;
-
   z-index: 900;
 }
 .login-page#login-form:after {
@@ -168,16 +167,19 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   margin-left: 15%;
 
 }
-.right a {
+.right{
   position: relative;
-  color: #b6b6b6;
+  float: right;
+  margin-top:5px;
+margin-right: 15%;
+}
+.right a {
+  color: #fff;
+  font-style: normal;
+  font-size: .9em;
   text-decoration: none;
   font-family: 'Arimo', sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: .9em;
-  float: right;
-  margin-top:5px;
 }
 .bts {
   padding: 2em;
@@ -261,39 +263,9 @@ i.fab.fa-google-plus-g
   margin-top: 40px;
 }
 
-.Info-redes{
-  margin-top: 20px;
-  width: 100%;
-  height: 30px;
-  background: white; /* NOTE: background */
-  display: flex;
-}
-
-.Info-dir{
-  width: 100%;
-  height: 80px;
-  background: white; /* NOTE: background */
-}
-
-.Info-empresa{
-  width: 100%;
-  height: 30px;
-  background: white; /* NOTE: background */
-}
-
 .form p{
   margin: 2px;
 }
-
-.Info-dir p,
-.Info-empresa p{
-  margin: 0;
-}
-
-.Info p{
-  margin-bottom: 3px;
-}
-
 footer{
   position: fixed;
   background: #F9F9F9;
@@ -367,4 +339,38 @@ footer p{
 .Redes-instagram-d{
   margin-left: 20px;
 }
+@media screen and (max-width 680px) {
+body{
+  background: red;
+}
+  .login-page{
+    margin-top: 3%;
+  }
+  .form {
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .login-page#login-form:before {
+    content: 'ó';
+    color: #79b42b;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 1%;
+    bottom: 0;
+    margin: auto;
+    height: 0.5em;
+    width: 0.5em;
+    left: 1.5em;
+    z-index: 900;
+  }
+  .left{
+    margin-left: 0;
+
+  }
 }
