@@ -159,15 +159,14 @@ body{
 }
 
 footer{
-  position: fixed;
   background: #F9F9F9;
-  display: flex;
+  display: flex !important;
   margin-left:0;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   align-items: center;
-  justify-content:space-around;
-  bottom: 0;
+  justify-content: space-around;
+  position: absolute;
 }
 
 footer p{
@@ -273,8 +272,11 @@ footer p{
 }
 
 footer{
-  display: inline-grid;
+  display: grid !important;
+  bottom: 0;
 }
+
+/* IDEA: Menu Hamburguesa */
 
 * {
   box-sizing:border-box;
@@ -289,22 +291,21 @@ a {
   text-decoration:none;
 }
 
-
 .nav {
   position:absolute;
   width:150px;
-  height:100vh;
+  height: 62vh;
   top:0;
   left:-220px;
   padding-top:47px;
+  padding-bottom: 100px;
   background-color: rgba(29, 33, 32, 1);
-  border-right:4px solid rgba(114, 126, 3, 1); /*Color del borde del nav*/
   transition:all .5s ease;
 }
 .nav__item {
    display:block;
    width:96%;
-   margin:0 auto;
+   margin:0px auto;
    line-height:2;
    position:relative;
    border-bottom:.5px solid rgba(59, 62, 61, 1);
@@ -313,6 +314,11 @@ a {
    font-family: 'Open Sans', sans-serif;
    text-align:center;
    color:rgba(221, 231, 228, 1);
+}
+
+.Menu-hamburguesa nav a{
+  color: white;
+  text-decoration: none;
 }
 
 .current:before {
@@ -334,7 +340,6 @@ a {
   height:0;
   position:absolute;
   border-top:16.5px solid transparent;
-  border-left:17px solid rgba(114, 126, 3, 1);  /*Color del borde del triangulo*/
   border-bottom:17px solid transparent;
   top:.5px;
   right:-21px;

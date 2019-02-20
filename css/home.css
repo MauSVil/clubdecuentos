@@ -191,7 +191,7 @@ body{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 30vh;
   padding: 16px 64px;
   overflow: visible;
   margin-top: 20vh;
@@ -201,6 +201,10 @@ body{
 .Conocenos div h2{
   font-size: 2.7rem;
   font-weight: 100;
+}
+
+.Que-es div h2{
+  margin-bottom: 8vh;
 }
 
 .Que-es div p,
@@ -244,7 +248,7 @@ body{
 
 footer{
   background: #F9F9F9;
-  display: flex;
+  display: flex !important;
   margin-left:0;
   height: 50px;
   width: 100vw;
@@ -386,6 +390,17 @@ footer p{
 
 @media (max-width:767px) and (min-width:320px) {
 
+#carousel{
+  width: 50vw;
+  margin: 10vh auto;
+}
+
+#carousel h2{
+  margin: 10vh auto;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 100;
+}
 
 .logo-case,
 .logo,
@@ -486,13 +501,13 @@ body{
 .Que-es{
   margin-top: 0;
   width: 80vw;
-  height: 50vh;
+  height: auto;
 }
 
 .Conocenos{
   width: 80vw;
-  height: 150vh;
-  margin-top: 10em;
+  margin-top: 10vh;
+  height: auto;
 }
 
 .Primer-p{
@@ -505,8 +520,10 @@ body{
 }
 
 footer{
-  display: inline-grid;
+  display: grid !important;
 }
+
+/* IDEA: Menu Hamburguesa */
 
 * {
   box-sizing:border-box;
@@ -521,22 +538,21 @@ a {
   text-decoration:none;
 }
 
-
 .nav {
   position:absolute;
   width:150px;
-  height:100vh;
+  height: 62vh;
   top:0;
   left:-220px;
   padding-top:47px;
+  padding-bottom: 100px;
   background-color: rgba(29, 33, 32, 1);
-  border-right:4px solid rgba(114, 126, 3, 1); /*Color del borde del nav*/
   transition:all .5s ease;
 }
 .nav__item {
    display:block;
    width:96%;
-   margin:0 auto;
+   margin:0px auto;
    line-height:2;
    position:relative;
    border-bottom:.5px solid rgba(59, 62, 61, 1);
@@ -545,6 +561,11 @@ a {
    font-family: 'Open Sans', sans-serif;
    text-align:center;
    color:rgba(221, 231, 228, 1);
+}
+
+.Menu-hamburguesa nav a{
+  color: white;
+  text-decoration: none;
 }
 
 .current:before {
@@ -566,7 +587,6 @@ a {
   height:0;
   position:absolute;
   border-top:16.5px solid transparent;
-  border-left:17px solid rgba(114, 126, 3, 1);  /*Color del borde del triangulo*/
   border-bottom:17px solid transparent;
   top:.5px;
   right:-21px;
