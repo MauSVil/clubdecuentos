@@ -90,12 +90,13 @@
 body{
   margin: 0px;
   background-image: url("../images/texture1.png");
+  width: 100vw;
 }
 
 .F-section{
   margin-top: 80px;
-  height: 83.2vh;
-  width: 100vw;
+  height: auto;
+  width: inherit;
 }
 
 .Back-Im{
@@ -182,20 +183,7 @@ body{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.Que-es{
-  width: 50vw;
-  height: 40vh;
-  justify-content: center;
-  align-items: center;
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30vh;
-  padding: 16px 64px;
-  overflow: visible;
-  margin-top: 20vh;
-}
+
 
 .Que-es div h2,
 .Conocenos div h2{
@@ -217,21 +205,6 @@ body{
   padding:0 0px;
 }
 
-
-.Conocenos{
-  width: 50vw;
-  height: 80vh;
-  justify-content: center;
-  align-items: center;
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px 64px;
-  overflow: visible;
-  margin-top: 12vh;
-  margin-bottom: 20vh;
-}
 
 .Primer-p{
   margin-top: 50px;
