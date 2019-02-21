@@ -94,7 +94,7 @@ body{
 
 .F-section{
   margin-top: 80px;
-  height: 83.2vh;
+  height: auto;
   width: 100vw;
 }
 
@@ -184,7 +184,7 @@ body{
 
 .Que-es{
   width: 50vw;
-  height: 40vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   display: block;
@@ -220,7 +220,7 @@ body{
 
 .Conocenos{
   width: 50vw;
-  height: 80vh;
+  height: auto;
   justify-content: center;
   align-items: center;
   display: block;
@@ -416,7 +416,7 @@ body{
 
 .F-section{
   margin-top: 1em;
-  height: 83.2vh;
+  height: auto;
   width: 100vw;
 }
 
@@ -499,7 +499,7 @@ body{
 }
 
 .Que-es{
-  margin-top: 0;
+  margin-top: 15vh;
   width: 80vw;
   height: auto;
 }
