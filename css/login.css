@@ -33,11 +33,9 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
 }
 
 .header a:hover{
-  margin-right: 20px;
   text-decoration: underline;
   text-decoration-style: solid;
   color: white;
-  font-weight: 600;
 }
 
 .logo-case{
@@ -328,15 +326,14 @@ i.fab.fa-google-plus-g
   margin: 2px;
 }
 footer{
-  position: fixed;
   background: #F9F9F9;
   display: flex;
   margin-left:0;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   align-items: center;
   justify-content:space-around;
-  bottom: 0;
+  position: absolute;
 }
 
 footer p{

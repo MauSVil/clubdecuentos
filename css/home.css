@@ -28,11 +28,9 @@
 }
 
 .header a:hover{
-  margin-right: 20px;
   text-decoration: underline;
   text-decoration-style: solid;
   color: white;
-  font-weight: 600;
 }
 
 
