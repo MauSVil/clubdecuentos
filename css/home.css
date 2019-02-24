@@ -55,7 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 23vw;
+  width: auto;
 }
 
 .Header-fijo-nav{
@@ -230,6 +230,45 @@ body{
   margin-top: 12vh;
   margin-bottom: 20vh;
 }
+
+.grid-container{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-column-gap: 5%;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.item1,
+.item7{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item3 img,
+.item4 img{
+  height: 100px;
+}
+
+.item1{
+  font-size: 30px;
+}
+
+.item1 p{
+  font-size: 15px;
+  line-height: 45px;
+}
+
+
 
 .Primer-p{
   margin-top: 50px;
@@ -506,6 +545,10 @@ body{
   width: 80vw;
   margin-top: 10vh;
   height: auto;
+}
+
+.grid-container{
+  grid-column-gap: 15%;
 }
 
 .Primer-p{
