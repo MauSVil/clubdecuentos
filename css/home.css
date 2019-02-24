@@ -96,76 +96,45 @@ body{
   width: 100vw;
 }
 
-.Back-Im{
-  width: 100vw;
-  margin-top: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.grid-container1{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 1px;
+  padding: 0 10px;
+  position: absolute;
 }
 
-.Im-Case{
-  margin:0;
-  width: 200px;
-  height: 200px;
+.grid-container1 > div {
+  text-align: center;
+  padding: 5px 0;
 }
 
-.Im{
-  width: inherit;
-  height: inherit;
-  opacity: 1;
+.grid-container1 .logo{
+  grid-column-start:1;
+  grid-column-end: 5;
+  height: auto;
+  width: auto;
 }
 
-.Cuentos{
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2vh;
+
+.titulo,
+.signup{
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
-.Cuento1,
-.Cuento2,
-.Cuento3,
-.Cuento4{
-  width: 120px;
-  height: 120px;
-  margin-right: 15px;
-}
-
-.Cuento-case{
-  margin:0;
-  width: inherit;
-  height: inherit;
-}
-
-.Cuento-img{
-  margin:0;
-  width: inherit;
-  height: inherit;
-}
-
-.Home-Titulo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.titulo h1{
   font-size: 40px;
 }
-
-.Home-Titulo h1{
-  margin: 30px;
-  margin-bottom: 20px;
+.logo img{
+  height: 150px;
 }
 
-.Inscripcion{
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Inscripcion button{
+.signup button{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -177,8 +146,28 @@ body{
   border-radius: 5px;
 }
 
-.Inscripcion button:hover{
+.signup button:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+#particles-js{
+  height: auto;
+  background: #bbaeae;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.cuento1 img,
+.cuento2 img,
+.cuento3 img,
+.cuento4 img{
+  width: 140px;
+  height: 140px;
 }
 
 .Que-es{
@@ -382,7 +371,7 @@ footer p{
 }
 
 
-.Cuento1{
+.cuento1{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -394,7 +383,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento1:hover{
+.cuento1:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -402,7 +391,7 @@ footer p{
  -o-transform: scale(1.2);
 }
 
-.Cuento2{
+.cuento2{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -414,7 +403,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento2:hover{
+.cuento2:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -422,7 +411,7 @@ footer p{
  -o-transform: scale(1.2);
 }
 
-.Cuento3{
+.cuento3{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -434,7 +423,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento3:hover{
+.cuento3:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -442,7 +431,7 @@ footer p{
  -o-transform: scale(1.2);
 }
 
-.Cuento4{
+.cuento4{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -454,7 +443,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento4:hover{
+.cuento4:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
