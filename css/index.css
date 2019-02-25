@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 98.8vw;
   top: 0;
   z-index: 3;
 }
@@ -93,7 +93,7 @@ body{
 .F-section{
   margin-top: 80px;
   height: auto;
-  width: 100vw;
+  width: 98.8vw;
 }
 
 .grid-container1{
@@ -152,12 +152,13 @@ body{
 }
 
 #particles-js{
-  height: auto;
-  background: #bbaeae;
+  height: 100vh;
+  background: #d8d6e4;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 98.8vw;
 }
 
 
@@ -241,7 +242,7 @@ body{
 }
 
 .full-screen{
-  width: 100vw;
+  width: 98.8vw;
   height: auto;
   background: #4e4875;
 }
@@ -316,7 +317,7 @@ footer{
   display: flex !important;
   margin-left:0;
   height: 50px;
-  width: 100vw;
+  width: 98.8vw;
   align-items: center;
   justify-content: space-around;
   position: absolute;
@@ -469,78 +470,32 @@ footer p{
   font-weight: 100;
 }
 
-.logo-case,
-.logo,
+
 .Header-fijo,
 .header,
-.Cuentos{
+.cuento1,
+.cuento2,
+.cuento3,
+.cuento4{
   display: none;
 }
+
+#particles-js{
+  height: 100vh;
+}
+
+
 
 body{
   margin: 0px;
 }
 
-.F-section{
-  margin-top: 1em;
-  height: auto;
-  width: 100vw;
-}
-
-.Back-Im{
-  width: 100vw;
-  margin-top: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Im-Case{
-  margin:0;
-  width: 230px;
-  height: 230px;
-}
-
-.Im{
-  width: inherit;
-  height: inherit;
-  opacity: 1;
-}
 
 .Home-Titulo{
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 40px;
-}
-
-.Home-Titulo h1{
-  margin: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.Inscripcion{
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Inscripcion button{
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-}
-
-.Inscripcion button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .Crea-Cuento{
