@@ -1,0 +1,4 @@
+@mixin titulo($title-size, $title-weight){
+  font-size: $title-size;
+  font-weight: $title-weight;
+}

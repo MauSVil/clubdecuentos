@@ -1,0 +1,226 @@
+body {
+  margin: 0px;
+  background-image: url("../images/texture1.png");
+}
+
+.grid-container1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 1px;
+  padding: 0 10px;
+  position: absolute;
+}
+.grid-container1 div {
+  text-align: center;
+  padding: 5px 0;
+}
+.grid-container1 .logo {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: auto;
+  width: auto;
+}
+
+.titulo,
+.signup {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.titulo h1 {
+  font-size: 40px;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.signup button {
+  background-color: #4CAF50 !important;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.signup button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#particles-js {
+  height: 100vh;
+  background: #d8d6e4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98.8vw;
+}
+
+.cuento1 img,
+.cuento2 img,
+.cuento3 img,
+.cuento4 img {
+  width: 140px;
+  height: 140px;
+}
+
+.line {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-color: #645A90;
+}
+
+.line1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-color: #FFF;
+}
+
+.Que-es {
+  width: 50vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+  padding: 16px 64px;
+  overflow: visible;
+  margin-top: 20vh;
+}
+.Que-es div h2 {
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+
+.Conocenos div h2 {
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+
+.Que-es div p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Open Sans";
+  letter-spacing: 0.02rem;
+  line-height: 1.7;
+  padding: 0 0px;
+}
+
+.Conocenos {
+  width: 50vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 64px;
+  overflow: visible;
+  margin-top: 12vh;
+  margin-bottom: 20vh;
+}
+.Conocenos div p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Open Sans";
+  letter-spacing: 0.02rem;
+  line-height: 1.7;
+  padding: 0 0px;
+}
+
+.full-screen {
+  width: 98.8vw;
+  height: auto;
+  background: #645A90;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+.grid-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-column-gap: 5%;
+}
+.grid-container div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item1 h2 {
+  font-size: 2.7rem;
+  font-weight: 100;
+}
+.item1 p {
+  font-size: 15px;
+  line-height: 45px;
+}
+
+.item3 img {
+  height: 100px;
+}
+
+.item4 img {
+  height: 100px;
+}
+
+.item5 h2 {
+  margin-bottom: 8vh;
+}
+
+.item6 h2 {
+  margin-bottom: 8vh;
+}
+
+.item7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.Primer-p {
+  margin-top: 50px;
+}
+
+.Im-Cont {
+  position: fixed;
+  bottom: 7vh;
+  right: 2vw;
+  width: 60px;
+  height: 60px;
+}
+
+/*# sourceMappingURL=layoutindex.css.map */

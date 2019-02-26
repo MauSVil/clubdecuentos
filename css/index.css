@@ -90,11 +90,6 @@ body{
   background-image: url("../images/texture1.png");
 }
 
-.F-section{
-  margin-top: 80px;
-  height: auto;
-  width: 98.8vw;
-}
 
 .grid-container1{
   width: 50%;
@@ -249,7 +244,6 @@ body{
 
 .texto-blanco{
   color: white;
-
 }
 
 
