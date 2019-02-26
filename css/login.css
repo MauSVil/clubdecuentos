@@ -1,9 +1,7 @@
 body{
   margin: 0px;
-  padding:0px;
-font-family: 'Roboto', sans-serif;
-background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
-
+  background-image: url("../images/texture1.png");
+  font-family: "Roboto", sans-serif;
 }
 .header,
 .header-fijo{
@@ -14,7 +12,7 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   top: 0;
   z-index: 3;
 }
@@ -38,6 +36,7 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   color: white;
 }
 
+
 .logo-case{
   margin:0;
   width: 50px;
@@ -59,7 +58,7 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 23vw;
+  width: auto;
 }
 
 .Header-fijo-nav{
@@ -81,19 +80,18 @@ background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   color: white;
   font-size: 17px;
 }
-
+.title{
+    color: #645a90;
+}
+.title:hover{
+  background: none;
+}
 .Header-fijo a:hover{
   text-decoration: underline;
   text-decoration-style: solid;
   color: black;
   background-color: #7DA7C3;
 }
-
-.logo{
-  width: 50px;
-  height: 50px;
-}
-
 .foto-contacto{
   background: #0000ff24;
   width: 100%;
@@ -295,45 +293,15 @@ i.fab.fa-google-plus-g
   position:relative;
   top:1px;
 }
-
-.Contact-button{
-  width: 80px;
-  height: 25px;
-  background: #3498DB;
-  box-shadow: 0px 5px 0px 0px #2980B9;
-  text-decoration: none;
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-  margin-left: 90%;
-  margin-top: 10px;
-}
-
-.Contact-button:hover{
-  background: #39a0e5;
-}
-
-.Info{
-  background: white; /* NOTE: background */
-  display: inline;
-  width: 40vw;
-  height: 538px;
-  margin-left: 80px;
-  margin-top: 40px;
-}
-
-.form p{
-  margin: 2px;
-}
 footer{
   background: #F9F9F9;
-  display: flex;
+  display: flex !important;
   margin-left:0;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   align-items: center;
-  justify-content:space-around;
-  position: absolute;
+  justify-content: space-around;
+  position: inherit;
 }
 
 footer p{
@@ -350,6 +318,12 @@ footer p{
   display: flex;
 }
 
+.footer-redes{
+  height: 20px;
+  width: 20px;
+}
+
+
 .Redes-Container{
   height: 20px;
   width: 20px;
@@ -357,213 +331,154 @@ footer p{
   margin-left:10px;
 
 }
+
 .Redes-facebook{
   width: 20px;
 }
+
+.Redes-twitter{
+  width: 20px;
+}
+
 .Redes-instagram{
     width: 20px;
 }
-.footer-redes{
-  height: 20px;
-  width: 20px;
-}
-.Redes-Container-d{
-  height: 20px;
-  width: 20px;
-  margin:0;
-  margin-left:0px;
 
-}
+@media (min-width:900px){
+  .Menu-hamburguesa {
+      display: none;
+  }}
+@media (max-width:767px) and (min-width:320px) {
 
-.Redes-facebook-d,
-.Redes-instagram-d,
-{
-  width: 20px;
-}
-.Redes-instagram-d{
-  margin-left: 20px;
-}
-@media (max-width:680px) {
-  .header nav {
-    display: none;
-}
-.logo-case {
-    width: auto;
-    height: auto;
-    margin: 6px auto;
-}
-.logo {
-    width: 100px;
-    height: 100px;
-}
-.Header-fijo-nav {
+.header{
   display: none;
 }
-  /********************\
-    $Layout ☰
-  \********************/
+.Header-fijo{
+  display: none;
+}
+footer{
+  display: grid !important;
+  bottom: 0;
+}
 
-  /*Damos estilos al menú*/
-  .nav {
-    position:absolute;
-    width:200px;
-    height:100vh;
-    top:0;
-    left:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
-    padding-top:47px;
-    background-color: rgba(29, 33, 32, 1);
-    border-right:4px solid rgba(114, 126, 3, 1);
-    transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+/* IDEA: Menu Hamburguesa */
+
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  padding:0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+a {
+  text-decoration:none;
+}
+
+.nav {
+  position:absolute;
+  width:150px;
+  height: 62vh;
+  top:0;
+  left:-220px;
+  padding-top:47px;
+  padding-bottom: 100px;
+  background-color: rgba(29, 33, 32, 1);
+  transition:all .5s ease;
+}
+.nav__item {
+   display:block;
+   width:96%;
+   margin:0px auto;
+   line-height:2;
+   position:relative;
+   border-bottom:.5px solid rgba(59, 62, 61, 1);
+   border-top:.5px solid rgba(59, 62, 61, 1);
+   background-color:transparent;
+   font-family: 'Open Sans', sans-serif;
+   text-align:center;
+   color:rgba(221, 231, 228, 1);
+}
+.logo-case {
+    margin-left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 145px;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-top: -17px;
+}
+.Menu-hamburguesa nav a{
+  color: white;
+  text-decoration: none;
+}
+
+.current:before {
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  border-top:17px solid transparent;
+  border-left:15px solid #1D2120;
+  border-bottom:17px solid transparent;
+  top:0px;
+  right:-15px;
+  z-index:4;
+}
+
+.current:after {
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  border-top:16.5px solid transparent;
+  border-bottom:17px solid transparent;
+  top:.5px;
+  right:-21px;
+  z-index:1;
+}
+
+.menu-toogle {
+  position:fixed;
+  width: 35px;
+  line-height:1.1;
+  text-align:center;
+  top:6.5px;
+  left: 8px;
+  border-radius:3px;
+  background-color: transparent;
+  transition: all .5s ease;
+  z-index:10;
   }
-     /*Estilos de los li del menú*/
-     .nav__item {
-       display:block;
-       width:96%;
-       margin:0 auto;
-       line-height:2;
-       position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
-       border-bottom:.5px solid rgba(59, 62, 61, 1);
-       border-top:.5px solid rgba(59, 62, 61, 1);
-       background-color:transparent;
-       font-family: 'Lato', sans-serif;
-       text-align:center;
-       color:rgba(221, 231, 228, 1);
-     }
-         /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
-         .current:before {
-            content:"";
-            width:0;
-            height:0;
-            position:absolute; /*Le damos al before una posición absoluta relativa al li que lo contiene*/
-            border-top:17px solid transparent;
-            border-left:15px solid #1D2120;
-            border-bottom:17px solid transparent;
-            top:0px;
-            right:-15px; /*Lo posicionamos -15px a la derecha de su contenedor*/
-            z-index:4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
-         }
-        /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
-        .current:after {
-            content:"";
-            width:0;
-            height:0;
-            position:absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
-            border-top:16.5px solid transparent;
-            border-left:17px solid rgba(114, 126, 3, 1);
-            border-bottom:17px solid transparent;
-            top:.5px;
-            right:-21px;
-            z-index:1;  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
-        }
-    /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
-    .menu-toogle {
-      position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
-      width: 35px;
-      line-height:1.1;
-      text-align:center;
-      top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
-      left: 8px;
-      border-radius:3px;
-      background-color: #142b25;
-      transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
-      z-index:10;
-    }
-      /*Añadimos la haburguesa y le damos unos estilos*/
-      .menu-toogle::before {
-        content:"☰";
-        font-size:32px;
-        color:white;
-      }
 
-  /* Le damos unos estilos al contenedor principal*/
-  .main-w {
-    width:100%;
-    height:100vh;
-    transition: all .5s ease;
-  }
-      .header-w figure {
-        width:100%;
-        height:150px;
-        text-align:center;
-        position:relative;
-      }
-          .header-w figure:before {
-            content:"O";
-            width:15px;
-            height:15px;
-            position:absolute;
-            background-color:white;
-            border-radius:100%;
-            color:#A9BC00;
-            font-size:120%;
-            font-wheight:bolder;
-            font-family:verdana;
-            left:42vw;
-            top:9vw;
-          }
-          .header-w figure:after {
-            content:"O";
-            width:15px;
-            height:15px;
-            position:absolute;
-            background-color:white;
-            border-radius:100%;
-            color:#A9BC00;
-            font-size:120%;
-            font-wheight:bolder;
-            font-family:verdana;
-            left:50.8vw;
-            top:9vw;
-          }
-      .featured-img {
-        margin:3em 6vw 0 0;
-        border:4px solid white;
-        border-radius:100%;
-      }
-      .header-w__description {
-        width:80%;
-        height:auto;
-        margin:0 auto;
-        padding:1em;
-        line-height:2;
-        text-align:center;
-        color:rgba(33, 36, 8, 1);
-      }
-          .header-w__title
-          {
-            font-size:300%;
-            font-family:Lobster;
-            margin:1em 0 0 0;
-          }
-          .header-w__title2 {
-            font-size:250%;
-            font-family:Lobster;
-            margin:0;
-          }
-      .paragraph {
-        width:80%;
-        margin:0 auto;
-        text-align:center;
-        font-family:'Source Sans Pro', sans-serif;
-      }
+.menu-toogle::before {
+  content:"☰";
+  font-size:32px;
+  color:black;
+}
 
-      /*Estos son los estilos que le dan la funcionalidad al menú*/
-      /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
-      .checkbox {
-        display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
-      }
-      .checkbox:checked ~ .nav {
-        left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
-        position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
-      }
-      .checkbox:checked ~ .main-w {
-        margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
-      }
-      .checkbox:checked ~ .menu-toogle {
-        left:208px;
-        position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
-      }
-  .foto-contacto{
+.checkbox {
+  display:none;
+}
+
+.checkbox:checked ~ .nav {
+  left:0px;
+  position:fixed;
+}
+
+.checkbox:checked ~ .main-w {
+  margin-left:200px;
+}
+
+.checkbox:checked ~ .menu-toogle {
+  left:170px;
+  position:fixed;
+}
+.foto-contacto{
     background-position: center top;
   }
   .form {
