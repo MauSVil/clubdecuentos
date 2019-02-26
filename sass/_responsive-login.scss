@@ -1,0 +1,152 @@
+@media (min-width:920px){
+  .Menu-hamburguesa {
+      display: none;
+  }
+}
+@media (max-width:767px) and (min-width:320px) {
+  .Menu-hamburguesa nav a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .current{
+    &:before {
+    content:"";
+    width:0;
+    height:0;
+    position:absolute;
+    border-top:17px solid transparent;
+    border-left:15px solid #1D2120;
+    border-bottom:17px solid transparent;
+    top:0px;
+    right:-15px;
+    z-index:4;
+              }
+  &:after {
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  border-top:16.5px solid transparent;
+  border-bottom:17px solid transparent;
+  top:.5px;
+  right:-21px;
+  z-index:1;
+}}
+.menu-toogle {
+position:fixed;
+width: 35px;
+line-height:1.1;
+text-align:center;
+top:6.5px;
+left: 8px;
+border-radius:3px;
+background-color: transparent;
+transition: all .5s ease;
+z-index:10;
+&:before {
+  content:"\f039";
+  font-size:32px;
+  font-weight: 900;
+  color:black;
+  font-family: "Font Awesome 5 Free";
+}
+}
+.checkbox {
+display:none;
+&:checked ~ .nav {
+  left:0px;
+  position:fixed;
+}
+&:checked ~ .main-w {
+  margin-left:200px;
+}
+&:checked ~ .menu-toogle {
+  left:170px;
+  position:fixed;
+}
+}
+.foto-contacto{
+background-position: center top;
+}
+.header{
+display: none;
+}
+.Header-fijo{
+display: none;
+}
+/* IDEA: Menu Hamburguesa */
+
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  padding:0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+a {
+  text-decoration:none;
+}
+
+.nav {
+  position:absolute;
+  width:150px;
+  height: 62vh;
+  top:0;
+  left:-220px;
+  padding-top:47px;
+  padding-bottom: 100px;
+  background-color: rgba(29, 33, 32, 1);
+  transition:all .5s ease;
+}
+.nav__item {
+   display:block;
+   width:96%;
+   margin:0px auto;
+   line-height:2;
+   position:relative;
+   border-bottom:.5px solid rgba(59, 62, 61, 1);
+   border-top:.5px solid rgba(59, 62, 61, 1);
+   background-color:transparent;
+   font-family: 'Open Sans', sans-serif;
+   text-align:center;
+   color:rgba(221, 231, 228, 1);
+}
+.logo-case {
+    margin-left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 145px;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-top: -17px;
+}
+.form {
+z-index: 1;
+background: #FFFFFF;
+max-width: 360px;
+margin: 0 auto  100px;
+padding: 25px;
+text-align: center;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.login-page#login-form{
+  &:before {
+  display: none;
+  }
+  &:after {
+  display: none;}
+}
+.left{
+margin-left: 3.5%;
+}
+footer{
+display: grid !important;
+bottom: 0;
+}
+}
