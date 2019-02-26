@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 98.8vw;
   top: 0;
   z-index: 3;
 }
@@ -28,11 +28,9 @@
 }
 
 .header a:hover{
-  margin-right: 20px;
   text-decoration: underline;
   text-decoration-style: solid;
   color: white;
-  font-weight: 600;
 }
 
 
@@ -57,7 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 23vw;
+  width: auto;
 }
 
 .Header-fijo-nav{
@@ -90,85 +88,53 @@
 body{
   margin: 0px;
   background-image: url("../images/texture1.png");
-  width: 100vw;
 }
 
 .F-section{
   margin-top: 80px;
   height: auto;
-  width: inherit;
+  width: 98.8vw;
 }
 
-.Back-Im{
-  width: 100vw;
-  margin-top: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.grid-container1{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 1px;
+  padding: 0 10px;
+  position: absolute;
 }
 
-.Im-Case{
-  margin:0;
-  width: 200px;
-  height: 200px;
+.grid-container1 > div {
+  text-align: center;
+  padding: 5px 0;
 }
 
-.Im{
-  width: inherit;
-  height: inherit;
-  opacity: 1;
+.grid-container1 .logo{
+  grid-column-start:1;
+  grid-column-end: 5;
+  height: auto;
+  width: auto;
 }
 
-.Cuentos{
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2vh;
+
+.titulo,
+.signup{
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
-.Cuento1,
-.Cuento2,
-.Cuento3,
-.Cuento4{
-  width: 120px;
-  height: 120px;
-  margin-right: 15px;
-}
-
-.Cuento-case{
-  margin:0;
-  width: inherit;
-  height: inherit;
-}
-
-.Cuento-img{
-  margin:0;
-  width: inherit;
-  height: inherit;
-}
-
-.Home-Titulo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.titulo h1{
   font-size: 40px;
 }
-
-.Home-Titulo h1{
-  margin: 30px;
-  margin-bottom: 20px;
+.logo img{
+  height: 150px;
 }
 
-.Inscripcion{
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Inscripcion button{
+.signup button{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -177,13 +143,70 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
 }
 
-.Inscripcion button:hover{
+.signup button:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+#particles-js{
+  height: 100vh;
+  background: #d8d6e4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98.8vw;
 }
 
 
+
+.cuento1 img,
+.cuento2 img,
+.cuento3 img,
+.cuento4 img{
+  width: 140px;
+  height: 140px;
+}
+
+.Que-es{
+  width: 50vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+  padding: 16px 64px;
+  overflow: visible;
+  margin-top: 20vh;
+}
+
+.line{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-color: #645A90;
+}
+
+.line1{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  border-color: #FFF;
+}
 
 .Que-es div h2,
 .Conocenos div h2{
@@ -191,9 +214,6 @@ body{
   font-weight: 100;
 }
 
-.Que-es div h2{
-  margin-bottom: 8vh;
-}
 
 .Que-es div p,
 .Conocenos div p{
@@ -205,6 +225,79 @@ body{
   padding:0 0px;
 }
 
+
+.Conocenos{
+  width: 50vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 64px;
+  overflow: visible;
+  margin-top: 12vh;
+  margin-bottom: 20vh;
+}
+
+.full-screen{
+  width: 98.8vw;
+  height: auto;
+  background: #4e4875;
+}
+
+.texto-blanco{
+  color: white;
+
+}
+
+
+.grid-container{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-column-gap: 5%;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.item1,
+.item7{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item3 img,
+.item4 img{
+  height: 100px;
+}
+
+.item1 h2{
+  font-size: 2.7rem;
+}
+
+.item1{
+  font-size: 30px;
+}
+
+.item1 p{
+  font-size: 15px;
+  line-height: 45px;
+}
+
+.item5 h2,
+.item6 h2{
+  margin-bottom: 8vh;
+}
 
 .Primer-p{
   margin-top: 50px;
@@ -224,7 +317,7 @@ footer{
   display: flex !important;
   margin-left:0;
   height: 50px;
-  width: 100vw;
+  width: 98.8vw;
   align-items: center;
   justify-content: space-around;
   position: absolute;
@@ -279,7 +372,7 @@ footer p{
 }
 
 
-.Cuento1{
+.cuento1{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -291,7 +384,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento1:hover{
+.cuento1:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -299,7 +392,7 @@ footer p{
  -o-transform: scale(1.2);
 }
 
-.Cuento2{
+.cuento2{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -311,7 +404,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento2:hover{
+.cuento2:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -319,7 +412,7 @@ footer p{
  -o-transform: scale(1.2);
 }
 
-.Cuento3{
+.cuento3{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -331,7 +424,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento3:hover{
+.cuento3:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -339,7 +432,7 @@ footer p{
  -o-transform: scale(1.2);
 }
 
-.Cuento4{
+.cuento4{
  display: block;
  transform: scale(1);
  -ms-transform: scale(1);
@@ -351,7 +444,7 @@ footer p{
  -ms-transition: all 500ms ease-in-out;
  -o-transition: all 500ms ease-in-out;
 }
-.Cuento4:hover{
+.cuento4:hover{
  transform: scale(1.2);
  -ms-transform: scale(1.2);
  -moz-transform: scale(1.2);
@@ -369,84 +462,40 @@ footer p{
 }
 
 #carousel h2{
-  margin: 10vh auto;
+  margin bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-size: 2.7rem;
   font-weight: 100;
 }
 
-.logo-case,
-.logo,
+
 .Header-fijo,
 .header,
-.Cuentos{
+.cuento1,
+.cuento2,
+.cuento3,
+.cuento4{
   display: none;
 }
+
+#particles-js{
+  height: 100vh;
+}
+
+
 
 body{
   margin: 0px;
 }
 
-.F-section{
-  margin-top: 1em;
-  height: 83.2vh;
-  width: 100vw;
-}
-
-.Back-Im{
-  width: 100vw;
-  margin-top: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Im-Case{
-  margin:0;
-  width: 230px;
-  height: 230px;
-}
-
-.Im{
-  width: inherit;
-  height: inherit;
-  opacity: 1;
-}
 
 .Home-Titulo{
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 40px;
-}
-
-.Home-Titulo h1{
-  margin: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.Inscripcion{
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Inscripcion button{
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-}
-
-.Inscripcion button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .Crea-Cuento{
@@ -472,7 +521,7 @@ body{
 }
 
 .Que-es{
-  margin-top: 0;
+  margin-top: 15vh;
   width: 80vw;
   height: auto;
 }
@@ -481,6 +530,10 @@ body{
   width: 80vw;
   margin-top: 10vh;
   height: auto;
+}
+
+.grid-container{
+  grid-column-gap: 15%;
 }
 
 .Primer-p{
