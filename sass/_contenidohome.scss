@@ -1,11 +1,6 @@
 @import "variables";
 @import "mixins";
 
-body{
-  margin: 0px;
-  background-image: url("../images/texture1.png");
-}
-
 .grid-container1{
   width: 50%;
   margin-left: auto;
@@ -67,10 +62,8 @@ body{
   height: 100vh;
   background: $bgp-color;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 98.8vw;
+  @include display(flex,center,center);
+  width: $wp-size;
 }
 
 .cuento1 img,
@@ -82,43 +75,25 @@ body{
 }
 
 .line{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 4em;
-  border-style: solid;
-  border-width: 1px;
-  width: 50%;
-  border-color: #645A90;
+  @include line(#645A90);
 }
 
 .line1{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-style: solid;
-  border-width: 1px;
-  width: 50%;
-  border-color: #FFF;
+  @include line(#FFF);
 }
 
 .Que-es{
-  width: 50vw;
   height: auto;
-  justify-content: center;
-  align-items: center;
-  display: block;
+  @include display(block,center,center);
+  @include centrar(50vw);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30vh;
   padding: 16px 64px;
   overflow: visible;
   margin-top: 20vh;
   div{
     h2{
-      @include titulo($title-size,$title-weight);
+      @include font($title-size,$title-weight);
     }
   }
 }
@@ -126,7 +101,7 @@ body{
 .Conocenos{
   div{
     h2{
-      @include titulo($title-size,$title-weight);
+      @include font($title-size,$title-weight);
     }
   }
 }
@@ -134,9 +109,7 @@ body{
 .Que-es{
   div{
     p{
-      font-size: 1rem;
-      font-weight: 500;
-      font-family: 'Open Sans';
+      @include font(1rem,500);
       letter-spacing: 0.02rem;
       line-height: 1.7;
       padding:0 0px;
@@ -145,23 +118,17 @@ body{
 }
 
 .Conocenos{
-  width: 50vw;
   height: auto;
-  justify-content: center;
-  align-items: center;
-  display: block;
+  @include display(block,center,center);
+  @include centrar(50vw);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding: 16px 64px;
   overflow: visible;
   margin-top: 12vh;
   margin-bottom: 20vh;
   div{
     p{
-      font-size: 1rem;
-      font-weight: 500;
-      font-family: 'Open Sans';
+      @include font(1rem, 500);
       letter-spacing: 0.02rem;
       line-height: 1.7;
       padding:0 0px;
@@ -170,7 +137,7 @@ body{
 }
 
 .full-screen{
-  width: 98.8vw;
+  width: $wp-size;
   height: auto;
   background: $primary-color;
 }
@@ -180,9 +147,7 @@ body{
 }
 
 .grid-container{
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  @include centrar(70vw);
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
@@ -199,10 +164,10 @@ body{
   grid-column-start: 1;
   grid-column-end: 3;
   h2{
-    @include titulo($title-size,$title-weight);
+    @include font($title-size,$title-weight);
   }
   p{
-    font-size: 15px;
+    @include font(1rem,500);
     line-height: 45px;
   }
 }

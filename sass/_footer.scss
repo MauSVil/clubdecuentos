@@ -1,11 +1,12 @@
+@import "mixins";
+@import "variables";
+
 footer{
-  background: #F9F9F9;
-  display: flex !important;
+  background: $footer-color;
+  @include display(flex !important, space-around,center);
   margin-left:0;
   height: 50px;
   width: 100%;
-  align-items: center;
-  justify-content: space-around;
   position: inherit;
   p{
     margin:0;
