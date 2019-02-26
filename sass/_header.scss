@@ -1,0 +1,78 @@
+body{
+  margin: 0px;
+  background-image: url("../images/texture1.png");
+  font-family: "Roboto", sans-serif;
+}
+.header,
+.header-fijo{
+  position: absolute;
+}
+.header{
+    background: #645A90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    a{
+     position: relative;
+     color: white;
+     text-decoration: none;
+     margin-right: 20px;
+     :hover{
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: white;
+   nav{
+     position: relative;
+     margin:0;
+     margin-right: 10px;
+   }
+   }
+ }
+}
+.logo-case{
+  margin:0;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+.Header-fijo-nav{
+  background-color:#7f78a9;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+a{
+  padding: 0 1vw;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  :hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: black;
+    background-color: #7DA7C3;
+  }}}
+  .foto-contacto{
+    background: #0000ff24;
+    width: 100%;
+    height: 250px;
+    background-image: url(https://www.simco-ion.es/uploads/pics/BannerLogIn.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -80%;
+    background-attachment: fixed;
+    background-size: contain;
+    }
