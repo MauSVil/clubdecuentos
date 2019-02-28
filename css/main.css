@@ -64,6 +64,8 @@ body{
 
 .Contact{
   display: flex;
+  height: auto;
+  width: auto;
   padding-left: 20%;
 }
 
@@ -262,7 +264,10 @@ footer p{
   display: none;
 }
 
-.form{  display: inherit;
+.form{
+  height: auto;
+  width: auto;
+  margin-left: 0;
 }
 
 .Form-1,

@@ -74,6 +74,22 @@
   height: 140px;
 }
 
+.cuento1{
+ @include animacion-cuento;
+}
+
+.cuento2{
+  @include animacion-cuento;
+}
+
+.cuento3{
+  @include animacion-cuento;
+}
+
+.cuento4{
+  @include animacion-cuento;
+}
+
 .line{
   @include line(#645A90);
 }
