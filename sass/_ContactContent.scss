@@ -1,0 +1,153 @@
+*{
+  background: transparent;
+}
+
+
+body{
+  margin: 0px;
+  background-image: url("../images/texture1.png");
+}
+
+.foto-contacto{
+  background: #0000ff24;
+  width: 98.8vw;
+  height: 100px;
+  background-image: url("http://www.vsystems.com.mx/assets/images/iconos704x334-180.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  p{
+    margin:0;
+    padding: 10% 50%;
+  }
+}
+
+.Contact{
+  display: flex;
+  height: auto;
+  width: auto;
+  padding-left: 20%;
+}
+
+.form{
+  display: block;
+  margin-top: 20px;
+  margin-left: 80px;
+  width: auto;
+  height: auto;
+  margin-bottom: 15vh;
+}
+
+.Form-1,
+.Form-2,
+.Form-3,
+.Form-4{
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.info-titulo{
+  margin-top: 80px;
+}
+
+.info-titulo h2{
+  margin: 0;
+}
+
+
+#name,
+#email,
+#tel{
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+}
+
+#message{
+  width: 100%;
+  height: 100px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #FAFAFA; /* NOTE: background */
+  resize: none;
+}
+
+
+.Contact-button{
+  width: 80px;
+  height: 25px;
+  background: #3498DB;
+  box-shadow: 0px 5px 0px 0px #2980B9;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 90%;
+  margin-top: 10px;
+}
+
+.Contact-button:hover{
+  background: #39a0e5;
+}
+
+.Info{
+  display: inline;
+  width: 40vw;
+  height: 538px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.Info-redes{
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+
+.Info-dir{
+  width: 100%;
+  height: 80px;
+}
+
+.Info-empresa{
+  width: 100%;
+  height: 30px;
+}
+
+.form p{
+  margin: 2px;
+}
+
+.Info-dir p,
+.Info-empresa p{
+  margin: 0;
+}
+
+.Info p{
+  margin-bottom: 3px;
+}
+
+.Redes-Container-d{
+  height: 20px;
+  width: 20px;
+  margin:0;
+  margin-left:0px;
+
+}
+
+.Redes-facebook-d,
+.Redes-instagram-d,
+.Redes-twitter-d{
+  width: 20px;
+}
+
+.Redes-twitter-d{
+  margin-left: 10px;
+}
+
+.Redes-instagram-d{
+  margin-left: 20px;
+}

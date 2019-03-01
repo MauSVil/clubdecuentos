@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0px;
   background-image: url("../images/texture1.png");
@@ -127,7 +128,7 @@ body {
 }
 
 .logo img {
-  height: 150px;
+  height: 35vh;
 }
 
 .signup button {
@@ -401,7 +402,7 @@ footer {
   margin-left: 0;
   height: 50px;
   width: 100%;
-  position: inherit;
+  position: absolute;
 }
 footer p {
   margin: 0;
@@ -439,6 +440,180 @@ footer p {
 
 .Redes-instagram {
   width: 20px;
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .Header-fijo,
+.header,
+.cuento1,
+.cuento2,
+.cuento3,
+.cuento4 {
+    display: none;
+  }
+
+  .carousel {
+    width: 50vw;
+    margin: 10vh auto;
+  }
+
+  #particles-js {
+    height: 100vh;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .Home-Titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .Crea-Cuento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .Que-es {
+    margin-top: 15vh;
+    width: 80vw;
+    height: auto;
+  }
+
+  .Conocenos {
+    width: 80vw;
+    margin-top: 10vh;
+    height: auto;
+  }
+
+  .grid-container {
+    grid-column-gap: 15%;
+  }
+
+  .Primer-p {
+    margin-top: 50px;
+  }
+
+  .Im-Cont {
+    display: none;
+  }
+
+  footer {
+    display: grid !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav {
+    position: absolute;
+    width: 150px;
+    height: 62vh;
+    top: 0;
+    left: -220px;
+    padding-top: 47px;
+    padding-bottom: 100px;
+    background-color: #1d2120;
+    transition: all 0.5s ease;
+  }
+
+  .nav__item {
+    display: block;
+    width: 96%;
+    margin: 0px auto;
+    line-height: 2;
+    position: relative;
+    border-bottom: 0.5px solid #3b3e3d;
+    border-top: 0.5px solid #3b3e3d;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: #dde7e4;
+  }
+
+  .Menu-hamburguesa nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .current:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 17px solid transparent;
+    border-left: 15px solid #1D2120;
+    border-bottom: 17px solid transparent;
+    top: 0px;
+    right: -15px;
+    z-index: 4;
+  }
+
+  .current:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 16.5px solid transparent;
+    border-bottom: 17px solid transparent;
+    top: 0.5px;
+    right: -21px;
+    z-index: 1;
+  }
+
+  .menu-toogle {
+    position: fixed;
+    width: 35px;
+    line-height: 1.1;
+    text-align: center;
+    top: 6.5px;
+    left: 8px;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  .menu-toogle::before {
+    content: "☰";
+    font-size: 32px;
+    color: black;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox:checked ~ .nav {
+    left: 0px;
+    position: fixed;
+  }
+
+  .checkbox:checked ~ .main-w {
+    margin-left: 200px;
+  }
+
+  .checkbox:checked ~ .menu-toogle {
+    left: 170px;
+    position: fixed;
+  }
 }
 
 /*# sourceMappingURL=layoutindex.css.map */

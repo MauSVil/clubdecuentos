@@ -290,7 +290,7 @@ footer {
   margin-left: 0;
   height: 50px;
   width: 100%;
-  position: inherit;
+  position: absolute;
 }
 footer p {
   margin: 0;
