@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/cuento.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Crea Tu Cuento</title>
+</head>
+<body>
+<header class="header">
+    <figure class="logo-case">
+      <img src="images/logo.png" alt="" class="logo">
+    </figure>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Sign Up</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html">Crea Tu Cuento</a>
+    </nav>
+  </header>
+  <div class="foto-contacto">
+  </div>
+  <div class="fase2 seccion-personaliza container mt-5">
+    <div class="info_libro col-sm-3">
+<div class="fase2_libro amarillo coleccion-6">
+	<img src="images/Cuento3.png" alt=""/>
+	<article>
+			<p class="f1_precio f2_precio">
+				<span class="pull-left">TAPA DURA </span>
+				<span class="pull-right">589.00 MXN</span>
+			</p>
+
+	</article>
+</div>
+<div class="explicacion">
+	<h1 style="font-size: 27px;font-weight: bold;">titulo del libro</h1>
+	<p>texto simulado.</p>
+
+		<p style="margin-top: 30px;">Texto simulado</p>
+
+</div>
+    </div>
+    <div class="info_nene col-sm-9 col-md-offset-0">
+          <div class="alert alert-danger alerta-paso" role="alert" style="display: none;">
+                Completa los pasos en orden por favor.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-danger alerta-campos" role="alert" style="display: none;">
+                Rellena todos los campos por favor.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+            </div>
+                  <form method="POST" id="formulario-paso1" action="https://micuento.com/es-mx/personalizacion/66/"><input type='hidden' name='csrfmiddlewaretoken' value='CoxRSJmhDJKTJsLXntUkSugvH1cGbm1cwaCeLQMHWSsLuK9NxST9joy1PNnktH1b' />
+<input type="hidden" name="country" value='es-mx'>
+<input type="hidden" name="text" value='mx'>
+	<div class="field">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				EL LIBRO ES PARA:
+			</h5>
+		</div>
+		<div class="content-field col-md-6">
+			<input type="text" maxlength="13" id="nombre_nino" name="nombre_nino" required class="form-control" value="">
+		</div>
+	</div>
+
+	<div class="field field-radio">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Y ES:
+			</h5>
+		</div>
+		<div class="content-field col-md-6">
+			<label for="nina" class="col-xs-5">
+				<img src="../../static/new/img/personalizacion/cuento11/genero/genero_nena.png" alt="Niña" class="img-responsive ">
+				<span>Niña</span>
+			</label>
+			<input type="radio" name="genero" id="nina" value="nina" >
+			<label for="nino" class="col-xs-5">
+				<img src="../../static/new/img/personalizacion/cuento11/genero/genero_nene.png" alt="Niño" class="img-responsive ">
+				<span>Niño</span>
+			</label>
+			<input type="radio" name="genero" id="nino" value="nino" >
+		</div>
+	</div>
+
+	<div class="field field-radio">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Color de ojos de <span class="nombreTexto">[NOMBRE]</span>:
+			</h5>
+		</div>
+		<div class="content-field col-md-6 muchos-radios">
+			<label for="marron" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/colores_ojos/ojos_marrones.png" alt="Marrones" class="img-responsive ">
+			</label>
+			<input type="radio" name="color_ojos_nino" id="marron" value="marron" >
+			<label for="azul" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/colores_ojos/ojos_azules.png" alt="Azules" class="img-responsive ">
+			</label>
+			<input type="radio" name="color_ojos_nino" id="azul" value="azul" >
+			<label for="verde" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/colores_ojos/ojos_verdes.png" alt="Verdes" class="img-responsive ">
+			</label>
+			<input type="radio" name="color_ojos_nino" id="verde" value="verde" >
+		</div>
+	</div>
+
+	<div class="field field-radio">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Color de piel de <span class="nombreTexto">[NOMBRE]</span>:
+			</h5>
+		</div>
+		<div class="content-field col-md-6 muchos-radios">
+			<label for="clara1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/colores_piel/piel_clara.png" alt="Clara" class="img-responsive ">
+			</label>
+			<input type="radio" name="pielNino" id="clara1" value="clara" >
+			<label for="oscura1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/colores_piel/piel_morena.png" alt="Oscura" class="img-responsive ">
+			</label>
+			<input type="radio" name="pielNino" id="oscura1" value="oscura" >
+			<label for="morena1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/colores_piel/piel_afro.png" alt="Morena" class="img-responsive ">
+			</label>
+			<input type="radio" name="pielNino" id="morena1" value="afro" >
+		</div>
+	</div>
+
+	<div class="field field-radio" id="peinadoTextos">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Tipo de pelo de <span class="nombreTexto">[NOMBRE]</span>:
+			</h5>
+		</div>
+		<div class="content-field col-md-6 muchos-radios">
+			<label for="peloAfroCorto1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/tipo_pelo/pelo_afro_corto.png" alt="Castaño" class="img-responsive ">
+				<span class="peinadoText">Afro corto</span>
+			</label>
+			<input onchange="chooseHair('afro')" type="radio" name="peloNino" id="peloAfroCorto1" value="afrocorto" >
+			<label for="peloAfroLargo1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/tipo_pelo/pelo_afro_largo.png" alt="Negro" class="img-responsive ">
+				<span class="peinadoText">Afro largo</span>
+			</label>
+			<input onchange="chooseHair('afro')" type="radio" name="peloNino" id="peloAfroLargo1" value="afrolargo" >
+			<label for="peloLisoCorto1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/tipo_pelo/pelo_liso_corto.png" alt="Rubio" class="img-responsive ">
+				<span class="peinadoText">Liso corto</span>
+			</label>
+			<input onchange="chooseHair('otherHair')" type="radio" name="peloNino" id="peloLisoCorto1" value="lisocorto" >
+			<label for="peloLisoLargo1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/tipo_pelo/pelo_liso_largo.png" alt="Pelirojo" class="img-responsive ">
+				<span class="peinadoText">Liso largo</span>
+			</label>
+			<input onchange="chooseHair('otherHair')" type="radio" name="peloNino" id="peloLisoLargo1" value="lisolargo" >
+			<label for="peloOnduladoCorto1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/tipo_pelo/pelo_ondulado_corto.png" alt="Pelirojo" class="img-responsive ">
+				<span class="peinadoText">Ondulado corto</span>
+			</label>
+			<input onchange="chooseHair('otherHair')" type="radio" name="peloNino" id="peloOnduladoCorto1" value="rizadocorto" >
+			<label for="peloOnduladoLargo1" class="col-xs-3">
+				<img src="../../static/new/img/personalizacion/cuento11/tipo_pelo/pelo_ondulado_largo.png" alt="Pelirojo" class="img-responsive ">
+				<span class="peinadoText">Ondulado largo</span>
+			</label>
+			<input onchange="chooseHair('otherHair')" type="radio" name="peloNino" id="peloOnduladoLargo1" value="rizadolargo" >
+		</div>
+	</div>
+
+	<div class="field field-radio" id="colorDelPelo" style="display:none">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Color de pelo de <span class="nombreTexto">[NOMBRE]</span>:
+			</h5>
+		</div>
+		<div class="content-field col-md-6 muchos-radios">
+				<label for="castanoclaro1" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_castano.png" alt="Castaño" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="castanoclaro1" value="castanoclaro" >
+				<label for="castanooscuro1" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_castano_oscuro.png" alt="Castaño" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="castanooscuro1" value="castanooscuro" >
+				<label for="moreno1" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_negro.png" alt="Negro" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="moreno1" value="negro" >
+				<label for="rubio1" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_rubio.png" alt="Rubio" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="rubio1" value="rubio" >
+				<label for="pelirrojo" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_pelirrojo.png" alt="Pelirojo" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="pelirrojo" value="pelirrojo" >
+		</div>
+	</div>
+
+	<div class="field field-radio" id="colorDelPeloAfro" style="display:none">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Color de pelo de <span class="nombreTexto">[NOMBRE]</span>:
+			</h5>
+		</div>
+		<div class="content-field col-md-6 muchos-radios">
+				<label for="castanooscuro1" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_castano_oscuro.png" alt="Castaño" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="castanooscuro1" value="castanooscuro" >
+
+				<label for="moreno1" class="col-xs-3">
+					<img src="../../static/new/img/personalizacion/cuento11/colores_pelo/pelo_negro.png" alt="Negro" class="img-responsive ">
+				</label>
+				<input type="radio" name="colorPelo" id="moreno1" value="negro" >
+		</div>
+	</div>
+
+	<div class="field field-radio">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				Lleva gafas?
+			</h5>
+		</div>
+		<div class="content-field col-md-6">
+			<label for="gafas1" class="col-xs-5">
+				<img src="../../static/new/img/personalizacion/cuento11/gafas/gafas.png" alt="Gafas" class="img-responsive ">
+				<span>Sí</span>
+			</label>
+			<input type="radio" name="gafasNino" id="gafas1" value="si" >
+			<label for="singafas1" class="col-xs-5">
+				<img src="../../static/new/img/personalizacion/cuento11/gafas/singafas.png" alt="Sin Gafas" class="img-responsive ">
+				<span>No</span>
+			</label>
+			<input type="radio" name="gafasNino" id="singafas1" value="no" >
+		</div>
+	</div>
+
+	<div class="field">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				País donde vive:
+			</h5>
+		</div>
+		<div class="content-field col-md-6">
+			<input type="text" name="nombre_pais" required="" class="form-control" maxlength="25" value="">
+		</div>
+	</div>
+
+	<div class="field">
+		<div class="label-field col-md-6 text-right">
+			<h5>
+				<select id="lugar_procedencia" name="lugar_procedencia" class="-cd-select personaje-dropdown form-control">
+					<option value="ciudad" >Ciudad donde vive</option>
+					<option value="pueblo" >Pueblo donde vive</option>
+				</select>
+			</h5>
+		</div>
+		<div class="content-field col-md-6">
+			<input type="text" name="nombre_ciudad" required="" class="form-control" maxlength="20" value="">
+		</div>
+    </div>
+    <h5 class="label-field col-md-12 text-center">Atención: si escribe los nombres en MAYÚSCULAS, éstos aparecerán tal y como los haya escrito.</h5>
+            <input type="submit" onclick="disableSubmit(this)" value="Siguiente >" id="siguiente-paso-1" class="button--next__funnel button__text__funnel"/>
+        </form>
+    </div>
+</div>
+
+  <!-- <section class="grid-container1 req-container">
+    <div class="item1">
+      El libro es para:
+    </div>
+    <div class="item2">
+      <input type="text" name="" value="">
+    </div>
+    <div class="item3">
+      Y es:
+    </div>
+    <div class="item4">
+      4
+    </div>
+    <div class="item5">
+      Color de ojos:
+    </div>
+    <div class="item6">
+      6
+    </div>
+    <div class="item7">
+      Color de piel:
+    </div>
+    <div class="item8">
+      8
+    </div>
+
+
+  </section> -->
+
+<div class=" pasos-cuento text-center" style="margin:0px;margin-top:30px;top:10px;">
+      <div class="row-cuento container-paso">
+          <div class="col-md-4">
+              <div style="text-align: center;height: 150px;">
+                  <img src="images/icono_libro_1.png" alt="" width="140px" style="position: relative;top: 45px;">
+              </div>
+              <p><strong>Libros de calidad</strong></p>
+              <p style="color:#5f5d5d;">Disfruta de nuestros preciosos cuentos en tapa dura, ilustrados a todo color, con bellísimas ilustraciones para compartir en familia.</p>
+          </div>
+          <div class="col-md-4">
+              <div style="text-align: center;height: 150px;">
+                  <img src="images/icono_envio_1.png" alt="" width="120px" style="position: relative;top: 20px;">
+              </div>
+              <p><strong>Envíos seguros a tu casa</strong></p>
+              <p style="color:#5f5d5d;">El libro te llegará de 10 a 15 días laborables a la dirección que nos hayas indicado. (Excepto en fechas especiales)</p>
+          </div>
+          <div class="col-md-4">
+              <div style="text-align: center;height: 150px;">
+                  <img src="images/icono_recuerdo_1.png" alt="" width="80px">
+              </div>
+              <p><strong>Recuerdo para siempre</strong></p>
+              <p style="color:#5f5d5d;">Los libros personalizados de MiCuento además de promover el amor por la lectura de los más pequeños son un recuerdo muy emotivo que guardarán para siempre.</p>
+          </div>
+      </div>
+</div>
+   <footer>
+    <div class="footer-kitma">
+      <p>Mi Club De Cuentos by <a href="https://google.com">Grupo Kitma</a></p>
+    </div>
+    <div class="footer-redes">
+      <p>Siguenos:</p>
+      <figure class="Redes-Container">
+        <a href="http://facebook.com/msvilchis">
+          <img src="images/facebook.svg" alt="" class="Redes-facebook">
+        </a>
+      </figure>
+      <figure class="Redes-Container">
+        <a href="http://twitter.com/msvilchis">
+          <img src="images/twitter.svg" alt="" class="Redes-twitter">
+        </a>
+      </figure>
+      <figure class="Redes-Container">
+        <a href="http://instagram.com/msvilchis">
+          <img src="images/instagram.svg" alt="" class="Redes-instagram">
+        </a>
+      </figure>
+    </div>
+  </footer>
+
+  <!-- <div class="Menu-hamburguesa">
+    <input type="checkbox" class="checkbox" id="menu-toogle"/>
+    <label for="menu-toogle" class="menu-toogle"></label>
+    <nav class="nav">
+      <a href="#" class="nav__item current">Home</a>
+      <a href="#" class="nav__item">Sign In</a>
+      <a href="contacto.html" class="nav__item">Contacto</a>
+      <a href="#Que-es" class="nav__item">¿Que es?</a>
+      <a href="#Conocenos" class="nav__item">Conocenos</a>
+      <a href="#carousel" class="nav__item">Cuentos</a>
+    </nav>
+  </div> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
