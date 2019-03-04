@@ -36,7 +36,7 @@ body {
   margin-right: 10px;
 }
 
-.logo-case {
+.logo-case1 {
   margin: 0;
   width: 50px;
   height: 50px;
@@ -44,7 +44,7 @@ body {
   margin-left: 20px;
 }
 
-.logo {
+.logo1 {
   width: 50px;
   height: 50px;
 }
@@ -385,6 +385,20 @@ footer p {
     font-family: "Open Sans", sans-serif;
     text-align: center;
     color: #dde7e4;
+  }
+
+  .logo-case {
+    margin-left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 145px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-top: -17px;
   }
 
   .Menu-hamburguesa nav a {
