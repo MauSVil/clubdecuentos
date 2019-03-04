@@ -408,6 +408,10 @@ body {
   margin-top: -17px;
 }
 
+.Menu-hamburguesa {
+  display: none;
+}
+
 footer {
   background: #F9F9F9;
   display: flex !important;
