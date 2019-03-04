@@ -1,6 +1,18 @@
 @import "mixins";
 @import "variables";
 
+
+@media (min-width:1400px) {
+  .cuento1 img,
+  .cuento2 img,
+  .cuento3 img,
+  .cuento4 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+  }
+}
+
 @media (max-width:767px) and (min-width:320px) {
   .Header-fijo,
   .header,
