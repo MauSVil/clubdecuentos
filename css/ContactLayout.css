@@ -246,6 +246,10 @@ body {
   margin-left: 20px;
 }
 
+.Menu-hamburguesa {
+  display: none;
+}
+
 footer {
   background: #F9F9F9;
   display: flex !important;
@@ -254,7 +258,6 @@ footer {
   margin-left: 0;
   height: 50px;
   width: 100%;
-  position: absolute;
 }
 footer p {
   margin: 0;
@@ -352,6 +355,10 @@ footer p {
 
   a {
     text-decoration: none;
+  }
+
+  .Menu-hamburguesa {
+    display: block;
   }
 
   .nav {
