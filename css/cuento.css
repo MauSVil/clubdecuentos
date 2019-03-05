@@ -53,69 +53,16 @@ body{
   background-position: 0 -80%;
   background-attachment: fixed;
   background-size: contain; }
-/*
-.grid-container{
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display:inline-grid;
-  grid-template-columns: repeat(2,auto);
-  grid-template-rows: auto;
-  grid-column-gap: 1px;
-  padding: 0 10px;
+
+.img-responsive{
+  width: 4vw;
 }
 
-.grid-container > div {
-  text-align: center;
-  padding: 5px 0;
-  background: lightblue;
+input[type="radio"]{
+  display: none;
 }
 
-.item1{
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
 
-.item1 img,
-.item1 h2{
-  margin-bottom: 5vh;
-}
-
-.item1 p{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-body section{
-  display: inline;
-  width: auto;
-  margin-top: 10vh;
-  height: auto;
-}
-
-.req-container{
-  margin-left: 10vw;
-}
-
-.des-container{
-  padding: 100px;
-}
-
-.grid-container1{
-  width: 20%;
-  margin-left: 5vh;
-  margin-right: auto;
-  display:inline-grid;
-  grid-template-columns: 200px auto;
-  grid-column-gap: 1px;
-  padding: 0 10px;
-}
-
-.grid-container1 > div {
-  text-align: center;
-  padding: 5px 0;
-}*/
-/*seccion-cuento*/
 .fase2 {
     text-align: center;
     font-size: 0px;
