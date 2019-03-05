@@ -102,6 +102,15 @@
  background-color: #FAFAFA; /* NOTE: background */
  resize: none;
  }
+ .encabezado {
+     float: right;
+     margin-right: 35px;
+     font-size: 0.9em;
+     a{
+     color: #4C3F87 !important;}
+     .title{
+      color: #4C3F87;
+ }}
  .left{
  position: relative;
  float: left;
