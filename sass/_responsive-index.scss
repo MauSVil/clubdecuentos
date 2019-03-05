@@ -22,6 +22,9 @@
   .cuento4{
     display: none;
   }
+  h2{
+    @include font($title-size,$title-weight);
+  }
 
   .carousel{
     width: 50vw;
