@@ -1,0 +1,157 @@
+.img-responsive{
+  width: 4vw;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+
+.fase2 {
+    text-align: center;
+    font-size: 0px;
+}
+seccion-personaliza {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.fase2 .info_libro {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+.fase2 .fase2_libro {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.fase2 .coleccion-6 img {
+    border-bottom: solid 40px #645a90;
+}
+.fase2 .fase2_libro article {
+    margin-top: -38px;
+    font-family: 'roboto';
+    color: white;
+}
+.fase2 .f2_precio {
+    margin-top: 7px;
+    font-family: 'roboto';
+    overflow: hidden;
+}
+.fase2 .f1_precio {
+    color: #fff !important;
+}
+.fase2 .f2_precio span {
+    position: relative;
+    margin: 0px 20px;
+    font-size: 15px;
+}
+.fase2 .explicacion {
+    margin: auto;
+    font-size: 18px;
+    font-family: 'roboto';
+    font-weight: 300;
+    color: #555;
+    width: 85%;
+    margin-top: 5px;
+    line-height: 1.15em;
+}
+.fase2 .info_nene {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+#pasos-top {
+    margin-bottom: 75px;
+    margin-top: 6px;
+    font-size: 0px;
+}
+#pasos-top li a {
+    font-size: 18px;
+    font-family: 'roboto';
+    color: #6aa81b;
+}
+#pasos-top li a.active .numero-paso {
+    background: #779900;
+    color: #fff;
+}
+
+#pasos-top .numero-paso {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 22px;
+    margin: 0px auto 5px auto;
+    position: relative;
+    z-index: 9;
+    background: #ececec;
+}
+#pasos-top .paso1-guia .linea-pasos {
+    background: #779900;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+}
+#formulario-paso1 {
+    font-size: 16px;
+    width: 100%;
+
+}
+#formulario-paso1 .field .label-field, #formulario-paso1 .field .content-field {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+#formulario-paso1 .field {
+    clear: both;
+    font-size: 0px;
+    margin: 7px 0px;
+}
+#formulario-paso1 .field-radio {
+    margin: 25px 0px !important;
+}
+#peinadoTextos .peinadoText {
+  font-size: 12px !important;
+}
+.nombreTexto {
+  font-size: inherit !important;
+      text-transform: inherit !important;
+      color: #779900;
+      font-family: 'roboto';
+      display: inline !important;
+      margin-top: 0 !important;
+}
+
+/*footer-top*/
+.row-cuento {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;;
+    width: 100%;
+}
+.pasos-cuento {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 30px 0px;
+    background-color: rgb(239, 238, 238);
+}
+.container-pasos {
+    margin-left: 100px;
+}
+.pasos-cuento .paso-cuento {
+    padding-right: 70px;
+    color: #645A90;
+}

@@ -1,0 +1,395 @@
+body {
+  margin: 0px;
+  background-image: url("../images/texture1.png");
+  font-family: "Roboto", sans-serif;
+}
+
+.header,
+.header-fijo {
+  position: absolute;
+}
+
+.header {
+  background: #645A90;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+}
+.header a {
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.header a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #FFF;
+}
+.header nav {
+  position: relative;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.logo-case1 {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+.logo1 {
+  width: 50px;
+  height: 50px;
+}
+
+.Header-fijo {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.Header-fijo-nav {
+  background-color: #645A90;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header-fijo-nav a {
+  padding: 0 1vw;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 17px;
+}
+.Header-fijo-nav a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #FFF;
+}
+
+fieldset {
+  border: none;
+}
+
+.login {
+  z-index: 9999;
+  position: absolute;
+  width: 350px;
+  display: none;
+  margin-top: 2%;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid #ECF0F1;
+  right: 10%;
+  position: absolute;
+  top: -10px;
+}
+
+.formholder {
+  background: #ecf0f1;
+  width: 350px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.formholder input[type=email], .formholder input[type=password] {
+  padding: 7px 5px;
+  margin: 10px 0;
+  width: 96%;
+  display: block;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.formholder input[type=email]:focus, .formholder input[type=password]:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #1abc9c;
+}
+
+.formholder input[type=submit] {
+  background: #645A90;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.formholder input[type=submit]:hover {
+  background: #645A90;
+}
+
+.randompad {
+  padding: 10px;
+}
+
+.green {
+  color: #645A90;
+}
+
+.foto-contacto {
+  background: #0000ff24;
+  width: 100%;
+  height: 250px;
+  background-image: url(https://www.simco-ion.es/uploads/pics/BannerLogIn.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 -80%;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.img-responsive {
+  width: 4vw;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.fase2 {
+  text-align: center;
+  font-size: 0px;
+}
+
+seccion-personaliza {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.fase2 .info_libro {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+}
+
+.fase2 .fase2_libro {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.fase2 .coleccion-6 img {
+  border-bottom: solid 40px #645a90;
+}
+
+.fase2 .fase2_libro article {
+  margin-top: -38px;
+  font-family: "roboto";
+  color: white;
+}
+
+.fase2 .f2_precio {
+  margin-top: 7px;
+  font-family: "roboto";
+  overflow: hidden;
+}
+
+.fase2 .f1_precio {
+  color: #fff !important;
+}
+
+.fase2 .f2_precio span {
+  position: relative;
+  margin: 0px 20px;
+  font-size: 15px;
+}
+
+.fase2 .explicacion {
+  margin: auto;
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 300;
+  color: #555;
+  width: 85%;
+  margin-top: 5px;
+  line-height: 1.15em;
+}
+
+.fase2 .info_nene {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+}
+
+#pasos-top {
+  margin-bottom: 75px;
+  margin-top: 6px;
+  font-size: 0px;
+}
+
+#pasos-top li a {
+  font-size: 18px;
+  font-family: "roboto";
+  color: #6aa81b;
+}
+
+#pasos-top li a.active .numero-paso {
+  background: #779900;
+  color: #fff;
+}
+
+#pasos-top .numero-paso {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+  margin: 0px auto 5px auto;
+  position: relative;
+  z-index: 9;
+  background: #ececec;
+}
+
+#pasos-top .paso1-guia .linea-pasos {
+  background: #779900;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+}
+
+#formulario-paso1 {
+  font-size: 16px;
+  width: 100%;
+}
+
+#formulario-paso1 .field .label-field, #formulario-paso1 .field .content-field {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#formulario-paso1 .field {
+  clear: both;
+  font-size: 0px;
+  margin: 7px 0px;
+}
+
+#formulario-paso1 .field-radio {
+  margin: 25px 0px !important;
+}
+
+#peinadoTextos .peinadoText {
+  font-size: 12px !important;
+}
+
+.nombreTexto {
+  font-size: inherit !important;
+  text-transform: inherit !important;
+  color: #779900;
+  font-family: "roboto";
+  display: inline !important;
+  margin-top: 0 !important;
+}
+
+/*footer-top*/
+.row-cuento {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.pasos-cuento {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 30px 0px;
+  background-color: #efeeee;
+}
+
+.container-pasos {
+  margin-left: 100px;
+}
+
+.pasos-cuento .paso-cuento {
+  padding-right: 70px;
+  color: #645A90;
+}
+
+footer {
+  background: #F9F9F9;
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 0;
+  height: 50px;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+}
+
+.footer-kitma a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-redes {
+  display: flex;
+}
+
+.footer-redes {
+  height: 20px;
+  width: 20px;
+}
+
+.Redes-Container {
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.Redes-facebook {
+  width: 20px;
+}
+
+.Redes-twitter {
+  width: 20px;
+}
+
+.Redes-instagram {
+  width: 20px;
+}
+
+/*# sourceMappingURL=CuentosLayout.css.map */
