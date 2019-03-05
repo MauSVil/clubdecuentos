@@ -530,6 +530,10 @@ footer p {
     display: none;
   }
 
+  #carousel {
+    text-align: center;
+  }
+
   footer {
     display: grid !important;
   }
