@@ -103,6 +103,14 @@
  background-color: #FAFAFA; /* NOTE: background */
  resize: none;
  }
+ .encabezado {
+     float:right;
+     margin-right:35px;
+     font-size: 0.9em;
+     .title{
+       color:#645A90;
+     }
+   }
  .left{
  position: relative;
  float: left;

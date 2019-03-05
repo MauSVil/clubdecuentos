@@ -142,11 +142,35 @@ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   &:after {
   display: none;}
 }
+.login-page{
+justify-content: center;
+align-items: center;
+}
+.encabezado {
+    float: none;
+    margin-right: 35px;
+    font-size: 0.9em;
+    .title{
+     text-align: center;
+     margin-bottom: -7%;
+}}
 .left{
-margin-left: 3.5%;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+.right {
+margin-left: auto;
+margin-right: auto;
+width: 100%;
 }
 footer{
 display: grid !important;
 bottom: 0;
+}
+.footer-redes {
+height: 20px;
+margin: 0 auto;
+justify-content: center;
 }
 }
