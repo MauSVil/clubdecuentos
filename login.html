@@ -10,19 +10,24 @@
    <title>Sing up</title>
 </head>
 <body>
-
+ <!--heder stycky-->
+  <header class="Header-fijo">
+    <nav class="Header-fijo-nav">
+      <a href="#Que-es">¿Que es?</a>
+      <a href="#Conocenos">Conocenos</a>
+      <a href="#characters">Personajes</a>
+    </nav>
+  </header>
+ <!--heder stycky-->
   <header class="header">
-    <figure class="logo-case1">
-      <img src="images/logo.png" alt="" class="logo1">
+    <figure class="logo-case">
+      <img src="images/logo.png" alt="" class="logo">
     </figure>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="cuento.html">Crea Tu Cuento</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="login.html">Sign Up</a>
-      <a href="login.html">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
+        <a href="home.html">Home</a>
+        <a href="login.html">Sign Up</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html">Crea Tu Cuento</a>
     </nav>
   </header>
   <div class="foto-contacto">
@@ -37,7 +42,6 @@
         <button>crear cuenta</button>
         <p class="message">Ya estas registrado? <a href="#">Inicia Sesión</a></p>
       </form>
-      </form>
       <!--<form class="login-form">
         <input type="text" placeholder="username"/>
         <input type="password" placeholder="password"/>
@@ -45,15 +49,14 @@
         <p class="message">No estas regsitrado? <a href="#">Crea una cuenta</a></p>
       </form>-->
     </div>
-
-      <div class="right">
-        <a href="#" style="float:right;margin-right:35px;font-size: 0.9em;"><h3 class="title">No tienes una cuenta? Inicia sesión!</h3></a>
-        <div class="bts">
-          <a href="#" class="fblogin social"><i class="fab fa-facebook-f"></i><span>Inicia sesion con Facebook</span></a>
-          <a href="#" class="gplogin social"><i class="fab fa-google-plus-g"></i><span>Inicia sesion con Google</span></a>
-        </div>
-      </div>
     </div>
+    <div class="right">
+      <a href="#" class="encabezado"><h3 class="title">No tienes una cuenta? Inicia sesión!</h3></a>
+       <div class="bts">
+         <a href="#" class="fblogin social"><i class="fab fa-facebook-f"></i><span>Inicia sesion con Facebook</span></a>
+         <a href="#" class="gplogin social"><i class="fab fa-google-plus-g"></i><span>Inicia sesion con Google</span></a>
+     </div>
+  </div>
   <!--footer-->
     <footer>
       <div class="footer-kitma">
@@ -87,10 +90,12 @@
       <figure class="logo-case">
         <img src="images/logo.png" alt="" class="logo">
       </figure>
-      <a href="index.html" class="nav__item current">Home</a>
-      <a href="login.html" class="nav__item">Sign In</a>
+      <a href="#" class="nav__item current">Home</a>
+      <a href="#" class="nav__item">Sign In</a>
       <a href="contacto.html" class="nav__item">Contacto</a>
-
+      <a href="#Que-es" class="nav__item">¿Que es?</a>
+      <a href="#Conocenos" class="nav__item">Conocenos</a>
+      <a href="#carousel" class="nav__item">Cuentos</a>
     </nav>
   </div>
 <!--menu movil-->
