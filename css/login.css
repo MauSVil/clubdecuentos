@@ -126,13 +126,13 @@ fieldset {
   border-radius: 5px; }
 
 .formholder input[type="submit"]:hover {
-  background: #1bc6a4; }
+  background: #645A90; }
 
 .randompad {
   padding: 10px; }
 
 .green {
-  color: #1abc9c; }
+  color: #645A90; }
 
 .foto-contacto {
   background: #0000ff24;
@@ -241,6 +241,13 @@ fieldset {
   background-color: #FAFAFA;
   /* NOTE: background */
   resize: none; }
+
+.encabezado {
+  float: right;
+  margin-right: 35px;
+  font-size: 0.9em; }
+  .encabezado .title {
+    color: #645A90; }
 
 .left {
   position: relative;
@@ -475,11 +482,35 @@ footer {
   .login-page#login-form:after {
     display: none; }
 
+  .login-page {
+    justify-content: center;
+    align-items: center; }
+
+  .encabezado {
+    float: none;
+    margin-right: 35px;
+    font-size: 0.9em; }
+    .encabezado .title {
+      text-align: center;
+      margin-bottom: -7%; }
+
   .left {
-    margin-left: 3.5%; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+
+  .right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
 
   footer {
     display: grid !important;
-    bottom: 0; } }
+    bottom: 0; }
+
+  .footer-redes {
+    height: 20px;
+    margin: 0 auto;
+    justify-content: center; } }
 
 /*# sourceMappingURL=login.css.map */

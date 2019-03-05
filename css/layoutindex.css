@@ -71,8 +71,6 @@ body {
       text-decoration: underline;
       text-decoration-style: solid;
       color: #FFF; }
-<<<<<<< HEAD
-=======
 
 fieldset {
   border: none; }
@@ -128,14 +126,13 @@ fieldset {
   border-radius: 5px; }
 
 .formholder input[type="submit"]:hover {
-  background: #1bc6a4; }
+  background: #645A90; }
 
 .randompad {
   padding: 10px; }
 
 .green {
-  color: #1abc9c; }
->>>>>>> login
+  color: #645A90; }
 
 .foto-contacto {
   background: #0000ff24;
@@ -516,10 +513,6 @@ footer {
 
   .Im-Cont {
     display: none; }
-
-  #carousel {
-    text-align: center;
-  }
 
   footer {
     display: grid !important; }
