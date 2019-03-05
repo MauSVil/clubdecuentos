@@ -11,48 +11,38 @@ body {
 .header {
   background: #645A90;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   top: 0;
   z-index: 3; }
   .header a {
     position: relative;
-    color: #FFF;
+    color: white;
     text-decoration: none;
     margin-right: 20px; }
-    .header a:hover {
+    .header a :hover {
       text-decoration: underline;
       text-decoration-style: solid;
-      color: #FFF; }
-  .header nav {
-    position: relative;
-    margin: 0;
-    margin-right: 10px; }
+      color: white; }
+      .header a :hover nav {
+        position: relative;
+        margin: 0;
+        margin-right: 10px; }
 
-.logo-case1 {
+.logo-case {
   margin: 0;
   width: 50px;
   height: 50px;
   margin: 5px;
   margin-left: 20px; }
 
-.logo1 {
+.logo {
   width: 50px;
   height: 50px; }
 
-.Header-fijo {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto; }
-
 .Header-fijo-nav {
-  background-color: #645A90;
+  background-color: #7f78a9;
   height: inherit;
   width: inherit;
   display: flex;
@@ -65,12 +55,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    color: white;
     font-size: 17px; }
-    .Header-fijo-nav a:hover {
+    .Header-fijo-nav a :hover {
       text-decoration: underline;
       text-decoration-style: solid;
-      color: #FFF; }
+      color: black;
+      background-color: #7DA7C3; }
 
 .foto-contacto {
   background: #0000ff24;
@@ -83,8 +74,7 @@ body {
   background-size: contain; }
 
 .login-page {
-  margin-top: 3%;
-  height: 80vh; }
+  margin-top: 3%; }
 
 .form {
   z-index: 1;
@@ -180,6 +170,15 @@ body {
   /* NOTE: background */
   resize: none; }
 
+.encabezado {
+  float: right;
+  margin-right: 35px;
+  font-size: 0.9em; }
+  .encabezado a {
+    color: #4C3F87 !important; }
+  .encabezado .title {
+    color: #4C3F87; }
+
 .left {
   position: relative;
   float: left;
@@ -247,11 +246,12 @@ i.fab .fa-facebook-f, i.fab .fa-google-plus-g {
 footer {
   background: #F9F9F9;
   display: flex !important;
-  justify-content: space-around;
-  align-items: center;
   margin-left: 0;
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: inherit; }
   footer p {
     margin: 0; }
 
@@ -413,11 +413,39 @@ footer {
   .login-page#login-form:after {
     display: none; }
 
+  .login-page {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+
+  .encabezado {
+    float: none;
+    margin-right: 35px;
+    font-size: 0.9em; }
+    .encabezado .title {
+      text-align: center;
+      margin-bottom: -7%; }
+
   .left {
-    margin-left: 3.5%; }
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+
+  .right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
 
   footer {
     display: grid !important;
-    bottom: 0; } }
+    bottom: 0;
+    justify-content: center; }
+
+  .footer-redes {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0 15%; } }
 
 /*# sourceMappingURL=login.css.map */
